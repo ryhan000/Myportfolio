@@ -26,5 +26,12 @@ public class HomeController {
 		return "contact";
 	}
 	
+	@GetMapping(value = {"/projects"})
+	public String projectsPage() {
+		
+		return "projects";
+	}
+	
+	
 
 }
