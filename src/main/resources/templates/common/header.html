@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="common-header">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<title>Ryhan's Portfolio</title>
+
+<!-- Bootstrap core CSS -->
+<link href="/css/bootstrap.min.css" rel="stylesheet" />
+
+<link href="/css/non-responsive.css" rel="stylesheet" />
+
+<!-- Custom styles for this template -->
+<link href="/css/style.css" rel="stylesheet" />
+
+<link rel="icon" href="/image/dfd.png" />
+
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+
+
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+</head>
+
+<body>
+	<div th:fragment="navbar">
+
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="/">Projects</a></li>
+						<li><a th:href="@{/about}">About</a></li>
+						<li><a th:href="@{/contact}">Contact</a></li>
+						<li><a href="https://github.com/ryhan000">Codes</a></li>
+
+
+					</ul>
+					<!--           <ul class="nav navbar-nav navbar-right"> -->
+					<!--             <li><a href="../navbar/">Default</a></li> -->
+					<!--             <li><a href="../navbar-static-top/">Static top</a></li> -->
+					<!--             <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li> -->
+					<!--           </ul> -->
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</nav>
+
+	</div>
+
+	<div th:fragment="footer">
+
+		<footer class="footer">
+			<div class="text-center">
+				<span>Ryhan© 2018 - All Rights Reserved.</span>
+			</div>
+		</footer>
+
+	</div>
+
+
+
+	<div th:fragment="body-bottom-scripts">
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+	</div>
+</body>
+</html>

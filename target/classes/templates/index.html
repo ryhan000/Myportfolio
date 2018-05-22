@@ -1,31 +1,105 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Heroku Demo</title>
-    
-    <link rel = "stylesheet" type = "text/css" href = "css/page_style.css" />
-    
-  </head>
-  <body>
-  
-  	<form action="/index.html" th:action="@{/index}"  th:object="${comment}" method="post">
- 	<label>Your Name: </label>
-  	 <input type="text" th:field="*{commenterName}" placeholder="Enter Your Name" name="commenter_name" /><br/>
-  	 <label>Leave your comment: </label><br/>
- 	 <input type="text" th:field="*{commentText}" placeholder="Enter any thing you want to say" name="comment_text" /><br/>
- 	 <input type="submit" value="Submit" />
-	</form>  
-	
-	<th:block>
-		<ul>
-			<th:block th:each="c : ${allComments}">
-				<li><b><label th:text="${c.commentText}"></label></b><br/><label th:text="'By: ' + ${c.commenterName}"></label></li>
-			</th:block>
-		</ul>
-	</th:block>
-	
-	
-	
-  </body>
+<html lang="en" xmlns:th="http://www.w3.org/1000/xhtml">
+<head th:replace="common/header :: common-header" />
+
+<body>
+	<div th:replace="common/header :: navbar" />
+
+	<img src="/image/hand.jpg" class="img-responsive"
+		style="height: 450px; width: 100%;" />
+	<hr />
+
+	<div class="container">
+		<div class="row">
+
+
+			<div class="col-xs-12">
+			
+			              <h1 class="featurette-heading">
+							   <span class="text-success">Projects with source code </span>
+						   </h1>
+
+				<div class="row featurette">
+					<div class="col-md-7">
+						<h2 class="featurette-heading">Online Banking System</h2>
+						<p class="lead">The Banking system consists of two parts:
+							User-Front and Admin-Portal. User-Front is a user-facing system
+							and it includes such modules as User Signup/Login, Account,
+							Transfer, Appointment, Transaction and User Profile. Admin-Portal
+							is mainly used by Admin and it involves User Account and
+							Appointment modules..</p>
+							<p class="lead">
+							<span>Technologies are using:</span>Spring (MVC, Data,boot),
+							JPA/Hibernate, Maven, JSP(Bootstrap 4, Javascript), MySQL, Angular
+						   </p>
+					</div>
+					<div class="col-md-5">
+						<iframe width="460" height="315"
+							th:src="@{https://www.youtube.com/embed/s39mNwFuQDQ?start=2}"
+							frameborder="0" alt="no video attached" allowfullscreen="1"></iframe>
+					</div>
+				</div>
+
+				<hr class="featurette-divider" />
+
+				<div class="row featurette">
+					<div class="col-md-5">
+
+						<iframe width="460" height="315"
+							th:src="@{https://www.youtube.com/embed/s39mNwFuQDQ?start=2}"
+							frameborder="0" alt="no video attached" allowfullscreen="1"></iframe>
+					</div>
+					<div class="col-md-7">
+						<h2 class="featurette-heading">Movie Finder</h2>
+						<p class="lead">Movie Finder is a Angular 2 app where we can
+							find movie details like movie trailer,cast,imdb rating etc by
+							movie name.</p>
+							<p class="lead">
+							<span>Technologies are using:</span> Angular2
+						   </p>
+					</div>
+				</div>
+
+				<hr class="featurette-divider" />
+
+				<div class="row featurette">
+					<div class="col-md-7">
+						<h2 class="featurette-heading">Accounting of
+							individual-entrepreneurs</h2>
+						<p class="lead">the accounting of individual-entrepreneurs
+							(agreements, payments, accounts, printing documents, payroll
+							calculations). For example, the firm has some
+							individual-entrepreneurs. We've got agreement with each
+							entrepreneur. Every agreement has got specification and service
+							act. As result we are able to print the agreement's specification
+							and service act..</p>
+
+						<p class="lead">
+							<span>Technologies are using:</span>Spring (MVC, Data),
+							JPA/Hibernate, Maven, JSP(Bootstrap 4, Javascript), MySQL,
+							JasperReports, Tomcat
+						</p>
+					</div>
+					<div class="col-md-5">
+						<iframe width="460" height="315"
+							th:src="@{https://www.youtube.com/embed/s39mNwFuQDQ?start=2}"
+							frameborder="0" alt="no video attached" allowfullscreen="1"></iframe>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- end of container -->
+
+
+
+
+	<div th:replace="common/header :: footer" />
+	<div th:replace="common/header :: body-bottom-scripts" />
+
+</body>
 </html>
