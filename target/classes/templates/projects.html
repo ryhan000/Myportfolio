@@ -2,11 +2,11 @@
 <html lang="en" xmlns:th="http://www.w3.org/1000/xhtml">
 <head th:replace="common/header :: common-header" />
 
-<body>
+<body style="background-color: #FAE4E1;">
 	<div th:replace="common/header :: navbar" />
 
-	<img src="/image/hand.jpg" class="img-responsive"
-		style="height: 450px; width: 100%;" />
+	<img src="/image/carton.jpg" class="img-responsive"
+		style="height: 450px; width: 100%; object-fit: cover;" />
 	<hr />
 
 	<div class="container">
@@ -14,76 +14,123 @@
 
 
 			<div class="col-xs-12">
-			
-			              <h1 class="featurette-heading">
-							   <span class="text-success">Projects with source code </span>
-						   </h1>
 
-				<div class="row featurette">
-					<div class="col-md-7">
+				<h1 class="featurette-heading">
+					<span class="text-success">Projects with source code </span>
+				</h1>
+
+				<div class="row featurette" style="background-color: #34f7f721;">
+					<div class="col-md-6" style="padding-top: 10px;">
 						<h2 class="featurette-heading">Online Banking System</h2>
-						<p class="lead">The Banking system consists of two parts:
-							User-Front and Admin-Portal. User-Front is a user-facing system
-							and it includes such modules as User Signup/Login, Account,
-							Transfer, Appointment, Transaction and User Profile. Admin-Portal
-							is mainly used by Admin and it involves User Account and
-							Appointment modules..</p>
-							<p class="lead">
-							<span>Technologies are using:</span>Spring (MVC, Data,boot),
-							JPA/Hibernate, Maven, JSP(Bootstrap 4, Javascript), MySQL, Angular
-						   </p>
+						<p class="lead" style="font-size: 16px;">The Banking system
+							consists of two parts: User-Front and Admin-Portal. User-Front is
+							a user-facing system and it includes such modules as User
+							Signup/Login, Account, Transfer, Appointment, Transaction and
+							User Profile. Admin-Portal is mainly used by Admin and it
+							involves User Account and Appointment modules..</p>
+
+						<h2 id="glad-to-work-with" style="font-size: 20px;">Technologies</h2>
+
+						<ul>
+							<li>Spring (MVC, Data,boot)</li>
+							<li>Angular</li>
+							<li>JPA/Hibernate</li>
+							<li>Bootstrap</li>
+							<li>Database (Postgres)</li>
+							<li>Maven</li>
+						</ul>
+						<p class="lead" style="font-size: 13px;">
+							<a href="https://github.com/ryhan000/Online-Banking-System">Source
+								code for regular user</a><br /> <a
+								href="https://github.com/ryhan000/Online_Banking_System_adminPortal">Source
+								code for admin</a>
+						</p>
 					</div>
-					<div class="col-md-5">
-						<iframe width="460" height="315"
-							th:src="@{https://www.youtube.com/embed/s39mNwFuQDQ?start=2}"
-							frameborder="0" alt="no video attached" allowfullscreen="1"></iframe>
+					<div class="col-md-6" style="padding-top: 10px;">
+						<div class="panel panel-default">
+							<div class="panel-body" style="background-color: #ced1d2;">
+
+								<iframe width="526" height="315"
+									th:src="@{https://www.youtube.com/embed/s39mNwFuQDQ?start=2}"
+									frameborder="0" alt="no video attached" allowfullscreen="1"></iframe>
+
+							</div>
+
+						</div>
 					</div>
 				</div>
 
 				<hr class="featurette-divider" />
 
-				<div class="row featurette">
-					<div class="col-md-5">
+				<div class="row featurette" style="background-color: #34f7f721;">
+					<div class="col-md-6" style="padding-top: 10px;">
+						<div class="panel panel-default">
+							<div class="panel-body" style="background-color: #ced1d2;">
 
-						<iframe width="460" height="315"
-							th:src="@{https://www.youtube.com/embed/s39mNwFuQDQ?start=2}"
-							frameborder="0" alt="no video attached" allowfullscreen="1"></iframe>
+								<iframe width="526" height="315"
+									th:src="@{https://www.youtube.com/embed/s39mNwFuQDQ?start=2}"
+									frameborder="0" alt="no video attached" allowfullscreen="1"></iframe>
+
+							</div>
+
+						</div>
 					</div>
-					<div class="col-md-7">
+					<div class="col-md-6" style="padding-top: 10px;">
 						<h2 class="featurette-heading">Movie Finder</h2>
-						<p class="lead">Movie Finder is a Angular 2 app where we can
-							find movie details like movie trailer,cast,imdb rating etc by
-							movie name.</p>
-							<p class="lead">
-							<span>Technologies are using:</span> Angular2
-						   </p>
+						<p class="lead" style="font-size: 16px;">Movie Finder is a
+							Angular 2 app where we can find movie details like movie
+							trailer,cast,imdb rating etc by movie name.</p>
+
+						<h2 id="glad-to-work-with" style="font-size: 20px;">Technologies</h2>
+
+						<ul>
+							<li>Angular2</li>
+						</ul>
+
+						<p class="lead" style="font-size: 13px;">
+
+							<a href="https://github.com/ryhan000/MovieFinder">Source code</a>
+						</p>
 					</div>
 				</div>
 
 				<hr class="featurette-divider" />
 
-				<div class="row featurette">
-					<div class="col-md-7">
+				<div class="row featurette" style="background-color: #34f7f721;">
+					<div class="col-md-6" style="padding-top: 10px;">
 						<h2 class="featurette-heading">Accounting of
 							individual-entrepreneurs</h2>
-						<p class="lead">the accounting of individual-entrepreneurs
-							(agreements, payments, accounts, printing documents, payroll
-							calculations). For example, the firm has some
-							individual-entrepreneurs. We've got agreement with each
+						<p class="lead" style="font-size: 16px;">the accounting of
+							individual-entrepreneurs (agreements, payments, accounts,
+							printing documents, payroll calculations). For example, the firm
+							has some individual-entrepreneurs. We've got agreement with each
 							entrepreneur. Every agreement has got specification and service
 							act. As result we are able to print the agreement's specification
 							and service act..</p>
 
-						<p class="lead">
-							<span>Technologies are using:</span>Spring (MVC, Data),
-							JPA/Hibernate, Maven, JSP(Bootstrap 4, Javascript), MySQL,
-							JasperReports, Tomcat
-						</p>
+						<ul>
+							<li>Spring (MVC, Data)</li>
+							<li>Javascript</li>
+							<li>JPA/Hibernate</li>
+							<li>Bootstrap</li>
+							<li>Database (MySQL)</li>
+							<li>JasperReports</li>
+							<li>Maven</li>
+						</ul>
+
+
 					</div>
-					<div class="col-md-5">
-						<iframe width="460" height="315"
-							th:src="@{https://www.youtube.com/embed/s39mNwFuQDQ?start=2}"
-							frameborder="0" alt="no video attached" allowfullscreen="1"></iframe>
+					<div class="col-md-6" style="padding-top: 10px;">
+						<div class="panel panel-default">
+							<div class="panel-body" style="background-color: #ced1d2;">
+
+								<iframe width="526" height="315"
+									th:src="@{https://www.youtube.com/embed/s39mNwFuQDQ?start=2}"
+									frameborder="0" alt="no video attached" allowfullscreen="1"></iframe>
+
+							</div>
+
+						</div>
 					</div>
 				</div>
 
@@ -99,6 +146,5 @@
 
 	<div th:replace="common/header :: footer" />
 	<div th:replace="common/header :: body-bottom-scripts" />
-
 </body>
 </html>

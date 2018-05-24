@@ -35,7 +35,8 @@
 	<div th:fragment="navbar">
 
 		<!-- Fixed navbar -->
-		<nav class="navbar navbar-default navbar-fixed-top">
+		<nav class="navbar navbar-default navbar-fixed-top"
+			style="background-color: #58D68D;">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed"
@@ -49,11 +50,10 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="/"></a></li>
+						<li style="padding-left: 400px;"><a th:href="@{/about}">About</a></li>
 						<li><a th:href="@{/projects}">Projects</a></li>
-						<li><a th:href="@{/about}">About</a></li>
-						<li><a href="https://github.com/ryhan000">Codes</a></li>
 						<li><a th:href="@{/contact}">Contact</a></li>
+						<li><a href="https://github.com/ryhan000">Codes</a></li>
 
 					</ul>
 					<!--           <ul class="nav navbar-nav navbar-right"> -->
@@ -70,11 +70,11 @@
 
 	<div th:fragment="footer">
 
-		<footer class="footer">
-			<div class="text-center">
-				<span>Rayhan© 2018 - All Rights Reserved.</span>
-			</div>
-		</footer>
+				<footer class="footer">
+					<div class="text-center" style="background-color: #E6E6FA;">
+						<span class="text-muted">Rayhan© 2018 - All Rights Reserved.</span>
+					</div>
+				</footer>
 
 	</div>
 
