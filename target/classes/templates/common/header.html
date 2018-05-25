@@ -36,7 +36,7 @@
 
 		<!-- Fixed navbar -->
 		<nav class="navbar navbar-default navbar-fixed-top"
-			style="background-color: #58D68D;">
+			style="background-color: #0B486B; border-color: #314e61;">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed"
@@ -48,19 +48,14 @@
 					</button>
 					<a class="navbar-brand" href="#"></a>
 				</div>
-				<div id="navbar" class="navbar-collapse collapse">
+				<div id="navbar" class="navbar-collapse collapse" >
 					<ul class="nav navbar-nav">
-						<li style="padding-left: 400px;"><a th:href="@{/about}">About</a></li>
-						<li><a th:href="@{/projects}">Projects</a></li>
-						<li><a th:href="@{/contact}">Contact</a></li>
-						<li><a href="https://github.com/ryhan000">Codes</a></li>
-
-					</ul>
-					<!--           <ul class="nav navbar-nav navbar-right"> -->
-					<!--             <li><a href="../navbar/">Default</a></li> -->
-					<!--             <li><a href="../navbar-static-top/">Static top</a></li> -->
-					<!--             <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li> -->
-					<!--           </ul> -->
+						<li style="padding-left: 400px;"><a th:href="@{/about}"><span  style="color:#b1b6b9;">About</span></a></li>
+						<li><a th:href="@{/projects}"><span  style="color:#b1b6b9;">Projects</span></a></li>
+						<li><a th:href="@{/contact}"><span  style="color:#b1b6b9;">Contact</span></a></li>
+						<li><a href="https://github.com/ryhan000"><span  style="color:#b1b6b9;">Codes</span></a></li>
+                    </ul>
+		
 				</div>
 				<!--/.nav-collapse -->
 			</div>
@@ -71,7 +66,7 @@
 	<div th:fragment="footer">
 
 				<footer class="footer">
-					<div class="text-center" style="background-color: #E6E6FA;">
+					<div class="text-center" style="background-color: #79BD9A;">
 						<span class="text-muted">Rayhan© 2018 - All Rights Reserved.</span>
 					</div>
 				</footer>

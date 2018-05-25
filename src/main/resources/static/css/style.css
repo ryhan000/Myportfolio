@@ -1,7 +1,7 @@
 body {
   padding-top: 10px;
   padding-bottom: 20px;
-  background-color:#FAE4E1;
+  background-color:#CFF09E;
  
  
 }
@@ -13,10 +13,7 @@ hr{
 	color:#F76152;
 
 }
- 
-.navbar {
-  margin-bottom:0px;
-}
+
 
 
 .footer {
@@ -75,6 +72,12 @@ html
 {
     color: #444;
 }
+
+
+.h1, h1 {
+    font-size: 36px;
+    color:#3B8686;
+}
 .author h1,
 .author h2,
 .author h3,
@@ -116,7 +119,7 @@ div.content
 {
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    color: #bbb;
+    color:#3c9851;
 }
 .error
 {
@@ -170,6 +173,13 @@ h3.intro
 {
     margin-top: 0px
 }
+
+
+.h4, h4 {
+    font-size: 20px;
+}
+
+
 .list
 {
     font-family: 'Roboto', sans-serif;
